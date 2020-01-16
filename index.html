@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="icon" type="image/x-icon" href=""/>
+</head>
+
+<body>
+	<header>
+        <ul>
+            <li>TIENDA</li>
+            <li>PELICULAS</li>
+            <li>ESPECTACULOS</li>
+            <li>VIAJES</li>
+            <li>REGISTRATE</li>
+        </ul>
+    </header>
+	<main>
+        <form id="form1" onsubmit="return validar(this)" action="enviarform.php" method="post">
+            <ul>
+            <fieldset>
+            <legend>Datos Personales</legend>
+            <li>
+            <label for="nombre">Nombre*</label>
+            <input type="text" id="nombre" name="nombre" /><br><br>
+            <span id="nombreError"></span>
+            </li>
+            <li>
+            <label for="apellidos">Apellidos*</label>
+            <input type="text" id="direccion" name="apellidos"/><br><br>
+            <span id="apellidosError"></span>
+            </li>
+            <li>
+            <label for="email">E-mail*</label>
+            <input type="text" id="email" name="email" /><br><br>
+            <span id="emailError"></span>
+            </li>
+            <li>
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" /><br><br>
+            <span id="telefonoError"></span>
+            </li>
+            <li>
+            <label for="provincia">Provincia</label>
+            <select id="provincia" name="provincia">
+            <option value="">Seleccione</option>
+            <option>Barcelona</option>
+            <option>Madrid</option>
+            <option>Alicante</option>
+            <option>Malaga</option>
+            <option>Vizcaya</option>
+            <option>Cadiz</option>
+            <option>Guipuzcua</option>
+            <option>Sevilla</option>
+            <option>Granada</option>
+            <option>Girona</option>
+            <option>Castellon</option>
+            <option>Valencia</option>
+            <option>Almeria</option>
+            <option>Jaen</option>
+            <option>Alava</option>
+            <option>Tarragona</option>
+            <option>Toledo</option>
+            <option>La Coruña</option>
+            <option>Huelva</option>
+            <option>Las Palmas</option>
+            <option>Badajoz</option>
+            <option>Leon</option>
+            <option>Cordoba</option>
+            <option>Cuidad Real</option>
+            <option>Lerida</option>
+            <option>Caceres</option>
+            <option>Huesca</option>
+            <option>Santa Cruz de tenerife</option>
+            <option>Burgos</option>
+            <option>Valladolid</option>
+            <option>Albacete</option>
+            <option>Lugo</option>
+            <option>Salamanca</option>
+            <option>Zamora</option>
+            <option>Teruel</option>
+            <option>Cuenca</option>
+            <option>Ourense</option>
+            <option>Guadalajara</option>
+            <option>Segovia</option>
+            <option>Palencia</option>
+            <option>Avila</option>
+            <option>Soria</option>
+            <option>Asturias</option>
+            <option>Islas Baleares</option>
+            <option>Zaragoza</option>
+            <option>Navarra</option>
+            <option>La Rioja</option>
+            <option>Cantabria</option>
+            <option>Pontevedra</option>
+            <option>Murcia</option>
+            </select><br><br>
+            <span id="provinciaError"></span>
+            </li>
+            <li>
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" /><br><br>
+            <span id="fechaNacimientoError"></span>
+            </li>
+            </fieldset>
+            <fieldset>
+            <legend>Datos de usuario</legend>
+            <li>
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" /><br><br>
+            <span id="usuarioError"></span>
+            </li>
+            <li>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña" /><br><br>
+            <span id="contraseñaError"></span>
+            </li>
+            </fieldset>
+            <li>
+            <input class="check" type="checkbox" value="SI" id="aceptoNoticias"/><label>Si, quiero recibir por medios electronicos ofertas especiales y actualizaciones de los productos y servicios de las empresas del Grupo Disney</label><br><br>
+            <span id="aceptoError"></span>
+            </li>
+            <li>
+            <input class="check" type="checkbox" value="SI" id="acepto"/><label>He leído y acepto las condiciones</label><br><br>
+            <span id="aceptoError"></span>
+            </li>
+            <li><button type="submit">Registrarme</button></li>
+            </ul>
+        </form>
+    </main>
+	<footer></footer>
+    <script type="text/javascript" src="js/java.js"></script>
+</body>
+
+</html>
+
